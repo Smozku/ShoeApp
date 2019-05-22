@@ -187,7 +187,9 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
 
 body {
   background: #fff;
@@ -264,13 +266,16 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #FFF498; }
 
+html {
+  font-family: 'Roboto', sans-serif; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #222;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07); }
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  text-transform: uppercase; }
 
 .gigantic {
   font-size: 110px;
@@ -343,3 +348,47 @@ hr {
   top: 0;
   width: 100%;
   left: 0; }
+
+#header {
+  background: url("../img/heroBackground.jpg") no-repeat;
+  background-size: cover;
+  height: 800px;
+  overflow: hidden; }
+
+.headline {
+  text-align: center;
+  color: white;
+  width: 60%;
+  margin: 12vh auto 0; }
+  .headline h1 {
+    margin: 0; }
+  .headline p {
+    line-height: 1.8;
+    margin: 20px 12%; }
+  .headline img {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px; }
+
+.main-nav {
+  display: flex;
+  margin-top: 30px;
+  align-items: center; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav .logo {
+    margin-right: auto; }
+    .main-nav .logo > a {
+      padding: 0; }
+  .main-nav a {
+    display: block;
+    padding: 10px 40px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase; }
+    .main-nav a.download {
+      background: #ffffff;
+      color: #00adff;
+      box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
